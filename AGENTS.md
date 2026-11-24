@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## GharKhata structure
+- Keep GharKhata's record types, bilingual labels, date/cycle calculations, and local question matching in `src/lib/gharkhata.ts`, with dashboard interactions in `src/components/gharkhata-dashboard.tsx`, so business rules remain client-safe and independently testable.
