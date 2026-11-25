@@ -1,9 +1,7 @@
 # GharKhata
 
 - [x] Read the uploaded brief and create a privacy-first design direction.
-- [x] Enable Lovable Cloud and inspect the secure data options.
-- [ ] Build the bilingual dashboard, record cards, detail, scan, and reminder interactions.
-- [ ] Confirm private storage choice: browser-only or household sign-in for cloud records.
-- [ ] Confirm a supported current Gemini model for receipt scanning.
-- [ ] Complete the chosen data and scanner integrations; verify the app and tests.
-- [ ] Review the roadmap, inspect preview diagnostics, and commit the finished changes.
+- [x] Build the bilingual dashboard, record cards, details, manual record entry, and reminders.
+- [x] Keep records private to this browser without a login; share summaries through WhatsApp.
+- [ ] Add receipt-image AI extraction when a supported model is selected.
+- [x] Verify the main dashboard flow, tests, and preview diagnostics.

@@ -63,7 +63,7 @@ import {
   type RenewalCycle,
 } from "@/lib/gharkhata";
 
-const copy: Record<Language, Record<string, string>> = {
+const copy = {
   en: {
     brandLine: "A little more peace of mind at home",
     homeRecords: "Home records",
@@ -236,16 +236,16 @@ const copy: Record<Language, Record<string, string>> = {
     storageNote: "इस ब्राउज़र में निजी रूप से सहेजा गया",
     noAnswer: "इन रिकॉर्ड में इससे जुड़ी जानकारी नहीं मिली।",
   },
-};
+} satisfies Record<Language, Record<string, string>>;
 
-const categoryValues: Array<{ value: "all" | Category; labelKey: string }> = [
+const categoryValues: Array<{ value: "all" | Category; labelKey: keyof typeof copy.en }> = [
   { value: "all", labelKey: "all" },
   { value: "appliance", labelKey: "appliances" },
   { value: "insurance", labelKey: "insurance" },
   { value: "bill", labelKey: "bills" },
 ];
 
-const cycleChoices: Array<{ value: RenewalCycle; labelKey: string }> = [
+const cycleChoices: Array<{ value: RenewalCycle; labelKey: keyof typeof copy.en }> = [
   { value: "month", labelKey: "plusMonth" },
   { value: "threeMonths", labelKey: "plusThreeMonths" },
   { value: "year", labelKey: "plusYear" },
